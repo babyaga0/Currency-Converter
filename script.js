@@ -19,8 +19,8 @@ currencies.forEach((currency) => {
 });
 
 //Setting default values
-fromDropDown.value = "USD";
-toDropDown.value = "MAD";
+fromDropDown.value = "MAD";
+toDropDown.value = "USD";
 
 let convertCurrency = () => {
   //Create References
