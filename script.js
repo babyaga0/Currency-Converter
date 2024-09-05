@@ -24,10 +24,9 @@ toDropDown.value = "MAD";
 
 let convertCurrency = () => {
   //Create References
-  const amount = document.querySelector("#amount").value;
+   const amount = document.querySelector("#amount").value;
   const fromCurrency = fromDropDown.value;
   const toCurrency = toDropDown.value;
-
   //If amount input field is not empty
   if (amount.length != 0) {
     fetch(api)
@@ -44,7 +43,6 @@ let convertCurrency = () => {
     alert("Please fill in the amount");
   }
 };
-
 document
   .querySelector("#convert-button")
   .addEventListener("click", convertCurrency);
